@@ -13,7 +13,17 @@
     "target": "ES2023",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@": ["./"],
+      "@api/*": ["./api/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@lib/*": ["./lib/*"],
+      "@models/*": ["./models/*"],
+      "@services/*": ["./services/*"],
+      "@types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"]
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
