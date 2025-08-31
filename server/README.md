@@ -21,10 +21,6 @@ $ npm run start:dev
 npm run start:prod
 ```
 
-## Docker Setup
-
-For detailed Docker setup instructions, see [DOCKER.md](../DOCKER.md).
-
 ### Quick Docker Start
 ```bash
 # From project root directory
