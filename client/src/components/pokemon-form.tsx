@@ -116,14 +116,13 @@ export const PokemonForm: React.FC<PokemonFormProps> = ({
         </div>
       )}
 
-      <Card className="glass-card border-0 overflow-hidden relative">
+      <Card
+        className="glass-card border-0 overflow-hidden relative"
+        style={{ marginTop: "1rem" }}
+      >
         <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-blue-500/5 to-purple-500/5" />
 
         <CardHeader className="text-center pb-3 relative z-10">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <Sparkles className="w-6 h-6 text-emerald-500 floating-animation" />
-          </div>
-
           <CardTitle className="text-xl font-black bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
             Add New Pokemon
           </CardTitle>
@@ -143,8 +142,7 @@ export const PokemonForm: React.FC<PokemonFormProps> = ({
                 Pokemon Name or ID
               </label>
 
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 z-10" />
+              <div>
                 <input
                   id="pokemon-input"
                   type="text"
@@ -155,6 +153,7 @@ export const PokemonForm: React.FC<PokemonFormProps> = ({
                   onBlur={() => setTimeout(() => setShowHints(false), 200)}
                   disabled={isLoading}
                   className="pokemon-form-input w-full pl-10 pr-10 py-3 text-base rounded-lg border-2 border-gray-200 focus:border-emerald-400 focus:ring-2 focus:ring-emerald-100 transition-all duration-200 outline-none disabled:opacity-50 disabled:cursor-not-allowed font-medium"
+                  style={{ marginBottom: "1rem" }}
                   autoComplete="off"
                 />
 
