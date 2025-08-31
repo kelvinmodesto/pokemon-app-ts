@@ -22,7 +22,8 @@
       "@models/*": ["./models/*"],
       "@services/*": ["./services/*"],
       "@types/*": ["./types/*"],
-      "@utils/*": ["./utils/*"]
+      "@utils/*": ["./utils/*"],
+      "@db/*": ["./db/*"]
     },
     "incremental": true,
     "skipLibCheck": true,
